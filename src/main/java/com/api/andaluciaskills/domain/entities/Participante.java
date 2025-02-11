@@ -13,15 +13,16 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Participante {
-  @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private Integer idParticipante;
 
-  private String nombre;
-  private String apellidos;
-  private String centro;
+	@Id
+	private String dni;
 
-  @ManyToOne
-  @JoinColumn(name = "Especialidad_idEspecialidad")
-  private Especialidad especialidad;
+	private String nombre;
+	private String apellidos;
+	private String email;
+	private String centro;
+
+	@ManyToOne
+	@JoinColumn(name = "idEspecialidad")
+	private Especialidad especialidad;
 }

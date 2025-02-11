@@ -1,4 +1,4 @@
-package com.api.andaluciaskills.domain.port;
+package com.api.andaluciaskills.domain.port.especialidad;
 
 import com.api.andaluciaskills.domain.entities.Especialidad;
 import java.util.Optional;
